@@ -7,7 +7,7 @@ excerpt: BOOPodsofdofk
 {% for project in site.projects %}
   <li>
     <span class="tagline">{{ project.tagline }}</span>
-    <a href="{{ project.url }}">
+    <a href="{{ project.url | prepend: site.baseurl }}">
       {{ project.title }}
     </a>
   </li>
